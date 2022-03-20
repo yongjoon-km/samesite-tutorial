@@ -1,0 +1,15 @@
+<html>
+    <head>
+    </head>
+    <script>
+        function login(e) {
+            fetch("/login", {"method": "POST"}).then(a => a.text()).then(console.log);
+        }
+    </script>
+    <body>
+        <div>hello world</div>
+        <img src="/img" alt="image">
+        <button onclick="login()">login</button>
+    </body>
+    
+</html>
