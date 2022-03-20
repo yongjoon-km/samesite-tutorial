@@ -32,6 +32,14 @@ mkcert site2.com
 " output -> site2.com.pem, site2.com-key.pem
 ```
 
+- Add the below to `/etc/hosts` so that you can access them with domain name on your local machine.
+
+```bash
+127.0.0.1	site1.com
+127.0.0.1	site2.com
+```
+
+
 - Install express server and run resource-server
 
 ```bash
