@@ -1,5 +1,15 @@
 # SameSite tutorial
 
+## Overview
+To get image resourece from resoure-server you need `loginId` cookie with the request.
+If you click login button, you will get the `loginId` cookie with a SameSite attribute. This attribute can be changed in code either of `strict`, `lax`, `none`.
+
+The front server has `<img />` and `<a />` elements.
+- When `SameSite=strict`, then both elements won't work.
+- When `SameSite=lax`, then only `<a />` will work.
+- When `SameSite=none`, then both elements will work.
+
+
 ## How to run
 
 - Install mkcert to run https in your localhost
